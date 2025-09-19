@@ -3,6 +3,7 @@ import styled from "styled-components";
 import colors from "../theme/color/ColorTheme";
 import NavBar from "../components/navbar/NavBar";
 import HeroSection from "./components/HeroSection";
+import WhyUsSection from "./components/WhyUsSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -15,6 +16,7 @@ function HomePage() {
     <Wrapper>
       <NavBar/>
       <HeroSection/>
+      <WhyUsSection/>
     </Wrapper>
   );
 }

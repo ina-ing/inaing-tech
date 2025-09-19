@@ -16,11 +16,12 @@ const scroll = keyframes`
 const Wrapper = styled.div`
   max-width: 1200px;
   width: 100%;
-  margin: 4px auto;
+  margin: 0px auto;
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 12px 20px;
+  padding-bottom: 0px;
 `;
 const HeroContainer = styled.div`
   color: ${colors.white};
@@ -92,7 +93,11 @@ const CTA = styled.div`
     text-decoration: none;
     color: ${colors.white};
     font-size: ${fontSize.m};
-    font-weight: 500;
+    font-weight: 400;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `;
 
@@ -144,7 +149,7 @@ const MarqueeTitle = styled.h3`
   justify-content: center;
   text-align: center;
   font-size: ${fontSize.m};
-  font-weight: 400;
+  font-weight: 500;
 `;
 
 const MarqueeContent = styled.div`
@@ -183,7 +188,7 @@ function HeroSection() {
         <HeroImage src={HeroImg} alt="Hero" />
       </HeroContainer>
       <MarqueeWrapper>
-      <MarqueeTitle>We've partnered with:</MarqueeTitle>
+        <MarqueeTitle>We've partnered with:</MarqueeTitle>
         <MarqueeContent>
           <img src={BrandsImg} alt="Brands" />
           <img src={BrandsImg} alt="Brands" />

@@ -34,12 +34,12 @@ const Container = styled.div`
     position: relative;
     font-size: ${fontSize.s};
     list-style: none;
-    letter-spacing: 18%;
+    letter-spacing: 0%;
     cursor: pointer;
     a {
       color: ${colors.black};
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 500;
     }
     &:hover {
       opacity: 0.7;

@@ -6,8 +6,9 @@ const colors = {
   secondaryBase: "#4386E7",
   secondaryShade: "#1B365C",
   grayTint: "#C8CBCD",
-  grayBase: "#485057",
+  grayBase: "#636363",
   grayShade: "#0E1011",
+  grayLight: "#FAFAFA",
   black: "#000000",
   white: "#ffffff",
 };

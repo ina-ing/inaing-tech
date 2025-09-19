@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   
   span{
     font-size: ${fontSize.s};
-    font-weight: 400;
+    font-weight: 500;
   }
 
   ${(props) =>
