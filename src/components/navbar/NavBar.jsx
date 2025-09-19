@@ -35,7 +35,7 @@ function Navbar() {
           <NavbarDesktop />
         </DesktopNavbar>
         <MobileNavbar>
-          <NavbarMobile />
+          <NavbarMobile/>
         </MobileNavbar>
       </Wrapper>
       <div style={{ paddingTop: "76px" }}></div>

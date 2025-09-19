@@ -5,7 +5,7 @@ const colors = {
   secondaryTint: "#B4CFF5",
   secondaryBase: "#4386E7",
   secondaryShade: "#1B365C",
-  grayTint: "#EDEEEE",
+  grayTint: "#C8CBCD",
   grayBase: "#485057",
   grayShade: "#0E1011",
   black: "#000000",

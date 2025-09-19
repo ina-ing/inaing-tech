@@ -6,5 +6,6 @@ const fontSize = {
   l: "22px",
   xl: "24px",
   xxl: "32px",
+  huge: "48px",
 };
 export default fontSize;

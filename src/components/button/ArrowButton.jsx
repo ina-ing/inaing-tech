@@ -43,28 +43,64 @@ const slideOut = keyframes`
 `;
 
 const Wrapper = styled.div`
-  background-color: ${colors.primaryBase};
-  color: ${colors.white};
   padding: 4px 10px;
   padding-right: 4px;
   display: flex;
   align-items: center;
   gap: 8px;
   border-radius: 2em;
-  font-size: ${fontSize.s};
   cursor: pointer;
+  
+  span{
+    font-size: ${fontSize.s};
+    font-weight: 400;
+  }
+
+  ${(props) =>
+    props.variant === "primary" &&
+    `
+    background-color: ${colors.primaryBase};
+    color:${colors.white};
+  `}
+  ${(props) =>
+    props.variant === "secondary" &&
+    `
+    background-color: ${colors.white};
+    color:${colors.primaryBase};
+  `}
 `;
 
 const IconWrapper = styled.div`
   width: 32px;
   height: 32px;
-  background-color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  ${(props) =>
+    props.variant === "primary" &&
+    `
+    background-color: ${colors.white};
+    color:${colors.white};
+  `}
+  ${(props) =>
+    props.variant === "secondary" &&
+    `
+    background-color: ${colors.primaryBase};
+    color:${colors.white};
+  `}
   svg {
+    ${(props) =>
+      props.variant === "primary" &&
+      `
+    color:${colors.primaryBase};
+  `}
+    ${(props) =>
+      props.variant === "secondary" &&
+      `
+    color:${colors.white};
+  `}
     stroke-width: 0.6px;
     ${({ animate }) =>
       animate === "in" &&
@@ -79,17 +115,18 @@ const IconWrapper = styled.div`
   }
 `;
 
-function ArrowButton({ text }) {
+function ArrowButton({ text, variant = "primary" }) {
   const [animate, setAnimate] = useState(null);
 
   return (
     <Wrapper
+      variant={variant}
       onMouseEnter={() => setAnimate("in")}
       onMouseLeave={() => setAnimate("out")}
     >
       <span>{text}</span>
-      <IconWrapper animate={animate}>
-        <GoArrowRight color="#172D5F" size={20} />
+      <IconWrapper animate={animate} variant={variant}>
+        <GoArrowRight size={20} />
       </IconWrapper>
     </Wrapper>
   );
