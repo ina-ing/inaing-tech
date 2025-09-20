@@ -27,10 +27,10 @@ const Subheading = styled.div`
 `;
 
 const Bullet = styled.div`
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: ${colors.secondaryBase};
+  background-color: ${colors.primaryBase};
 `;
 
 const Heading = styled.h1`
