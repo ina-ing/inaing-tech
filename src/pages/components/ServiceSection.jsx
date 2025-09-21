@@ -30,7 +30,6 @@ const carouselData = [
 
 const Wrapper = styled.div`
   width: 100%;
-  margin: 60px auto;
   box-sizing: border-box;
   background-color: #f5f7f9;
   padding: 50px 0px;
@@ -70,6 +69,7 @@ const CarouselContainer = styled.div`
 const ImageCard = styled.div`
   position: relative;
   cursor: pointer;
+
   ${(props) =>
     props.isCenter
       ? `
@@ -94,6 +94,7 @@ const ImageCard = styled.div`
   `}
 
   @media (max-width: 600px) {
+    transition: all 0.6s ease;
     ${(props) =>
       props.isCenter
         ? `
