@@ -60,7 +60,6 @@ const Overlay = styled.div`
   align-items: center;
   overflow: hidden;
   gap: 40px;
-  background-color: red;
   transition: height 0.6s ease, opacity 0.6s ease;
 `;
 

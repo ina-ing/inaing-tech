@@ -14,7 +14,6 @@ const Wrapper = styled.div`
   padding: 0px 20px;
   display: flex;
   flex-direction: column;
-  background-color: red;
 `;
 
 const Ratings = styled.div`

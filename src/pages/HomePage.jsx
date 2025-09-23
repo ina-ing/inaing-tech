@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import WhyUsSection from "./components/WhyUsSection";
 import ServiceSection from "./components/ServiceSection";
 import TestimonialSection from "./components/TestimonialSection";
+import FeatureSection from "./components/FeatureSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -21,6 +22,7 @@ function HomePage() {
       <WhyUsSection/>
       <ServiceSection/>
       <TestimonialSection/>
+      <FeatureSection/>
     </Wrapper>
   );
 }
