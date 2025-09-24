@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   max-width: 600px;
   margin: auto;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 40px;
@@ -36,7 +37,7 @@ const Bullet = styled.div`
 const Heading = styled.h1`
   font-family: ${fontFamily.secondary};
   font-size: ${fontSize.huge};
-  padding-top: 8px;
+  padding: 8px 0px;
   box-sizing: border-box;
   word-wrap: break-word;
   white-space: normal;
@@ -44,7 +45,7 @@ const Heading = styled.h1`
     font-size: ${fontSize.xxl};
   }
 `;
-function CenterHeading({ subheading, heading }) {
+function CenterHeading({ subheading, heading, children }) {
   return (
     <Wrapper>
       <Subheading>
@@ -52,6 +53,7 @@ function CenterHeading({ subheading, heading }) {
         <span>{subheading}</span>
       </Subheading>
       <Heading>{heading}</Heading>
+      {children}
     </Wrapper>
   );
 }

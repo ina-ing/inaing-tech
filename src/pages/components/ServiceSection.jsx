@@ -46,7 +46,6 @@ const GalleryWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
   height: 450px;
 
   @media (max-width: 600px) {

@@ -50,7 +50,7 @@ const Wrapper = styled.div`
   gap: 8px;
   border-radius: 2em;
   cursor: pointer;
-  
+  max-width: fit-content;
   span{
     font-size: ${fontSize.s};
     font-weight: 500;

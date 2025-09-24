@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   border-radius: 28px;
   border: 1px solid rgba(31, 81, 76, 0.05);
   overflow: hidden;
+  
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
 `;
 
 const GradientLayer = styled.div`
@@ -152,7 +156,7 @@ const PricingCard = ({
       <Subtitle>{subtitle}</Subtitle>
       <PriceTag>
         <h1>{price}</h1>
-        <span>/{variant}</span>
+        <span>/Month</span>
       </PriceTag>
       <Button variant={variant}>{cta}</Button>
       <CheckPoints>

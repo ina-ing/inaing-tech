@@ -8,6 +8,7 @@ import ServiceSection from "./components/ServiceSection";
 import TestimonialSection from "./components/TestimonialSection";
 import FeatureSection from "./components/FeatureSection";
 import PricingSection from "./components/PricingSection";
+import HowItWorksSection from "./components/HowItWorksSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -25,6 +26,7 @@ function HomePage() {
       <TestimonialSection/>
       <FeatureSection/>
       <PricingSection/>
+      <HowItWorksSection/>
     </Wrapper>
   );
 }

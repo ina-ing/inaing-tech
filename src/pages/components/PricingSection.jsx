@@ -16,6 +16,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   gap: 24px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 function PricingSection() {
