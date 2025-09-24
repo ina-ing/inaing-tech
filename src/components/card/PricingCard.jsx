@@ -73,7 +73,7 @@ const Tag = styled.div`
 
 const Subtitle = styled.div`
   color: ${colors.grayBase};
-  font-size: ${fontSize.s};
+  font-size: ${fontSize.m};
 `;
 
 const PriceTag = styled.div`
