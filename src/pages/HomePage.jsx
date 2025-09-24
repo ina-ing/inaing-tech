@@ -10,6 +10,10 @@ import FeatureSection from "./components/FeatureSection";
 import PricingSection from "./components/PricingSection";
 import HowItWorksSection from "./components/HowItWorksSection";
 import ImpactSection from "./components/ImpactSection";
+import TeamSection from "./components/TeamSection";
+import FaqSection from "./components/FaqSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "../components/footer/Footer";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -29,6 +33,10 @@ function HomePage() {
       <PricingSection/>
       <HowItWorksSection/>
       <ImpactSection/>
+      {/* <TeamSection/> */}
+      <FaqSection/>
+      <ContactSection/>
+      <Footer/>
     </Wrapper>
   );
 }

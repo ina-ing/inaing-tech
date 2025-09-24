@@ -60,7 +60,6 @@ const Tag = styled.div`
   border-radius: 24px;
   background-color: ${colors.primaryBase};
   color: ${colors.white};
-  font-weight: 600;
 `;
 
 const Title = styled.span`
